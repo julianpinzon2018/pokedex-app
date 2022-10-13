@@ -1,0 +1,38 @@
+.variants {
+  grid-area: variants;
+}
+.variants div {
+  display: flex;
+  align-items: center;
+  margin: 0;
+}
+.variants div > * {
+  filter: drop-shadow(3px 3px 0 var(--black));
+  cursor: pointer;
+}
+.variants div > *:active {
+  transform: scale(0.9);
+}
+.variants .boton-grande {
+  background-color: var(--secondary);
+  border-radius: 50%;
+  inline-size: 3rem;
+  block-size: 3rem;
+  border: none;
+}
+.variants .boton-amarillo {
+  background-color: #fecb2f;
+  border: none;
+  inline-size: 1.81rem;
+  block-size: 0.43rem;
+  border-radius: 0.5rem;
+  margin-inline-start: 2rem;
+  margin-inline-end: 1.56rem;
+}
+.variants .boton-negro {
+  background-color: var(--secondary);
+  border: none;
+  inline-size: 1.81rem;
+  block-size: 0.43rem;
+  border-radius: 0.5rem;
+}

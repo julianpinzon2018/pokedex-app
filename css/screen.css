@@ -1,0 +1,40 @@
+.screen-border {
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem;
+  padding-block-end: 0.95rem;
+  border-radius: 0.5rem;
+  background-color: var(--white);
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 2rem 100%, 0 calc(100% - 2.75rem));
+  gap: 0.95rem;
+}
+
+.screen {
+}
+.screen-safeArea {
+  padding: 1rem;
+  background-color: #8db9dc;
+  border-radius: 0.25rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  block-size: 10rem;
+  box-sizing: border-box;
+  background-size: cover;
+  background-position: center;
+}
+.screen-border .screen-safeArea-buttons {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.screen-safeArea-buttons div:nth-last-of-type(2) {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.screen-safeArea-buttons div:nth-last-of-type(1) {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
